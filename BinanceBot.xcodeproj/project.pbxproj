@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8FD5248A23B00EA60007EB36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5248923B00EA60007EB36 /* main.swift */; };
-		8FD5249423B011B50007EB36 /* BinanceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5249323B011B50007EB36 /* BinanceApiService.swift */; };
 		8FD5250223B016690007EB36 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5250123B016690007EB36 /* ConsoleIO.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		8FD5248623B00EA60007EB36 /* BinanceBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinanceBot; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD5248923B00EA60007EB36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		8FD5249323B011B50007EB36 /* BinanceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceApiService.swift; sourceTree = "<group>"; };
 		8FD5250123B016690007EB36 /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,19 +59,10 @@
 		8FD5248823B00EA60007EB36 /* BinanceBot */ = {
 			isa = PBXGroup;
 			children = (
-				8FD5249223B011AA0007EB36 /* APIService */,
 				8FD5248923B00EA60007EB36 /* main.swift */,
 				8FD5250123B016690007EB36 /* ConsoleIO.swift */,
 			);
 			path = BinanceBot;
-			sourceTree = "<group>";
-		};
-		8FD5249223B011AA0007EB36 /* APIService */ = {
-			isa = PBXGroup;
-			children = (
-				8FD5249323B011B50007EB36 /* BinanceApiService.swift */,
-			);
-			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +124,6 @@
 			files = (
 				8FD5250223B016690007EB36 /* ConsoleIO.swift in Sources */,
 				8FD5248A23B00EA60007EB36 /* main.swift in Sources */,
-				8FD5249423B011B50007EB36 /* BinanceApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

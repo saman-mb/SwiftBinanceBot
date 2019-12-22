@@ -4,9 +4,8 @@
 
 ### Features
 - secure secret API key storage
-- list wallet balances 
-- list active trades 
-- select an asset to auto trade 
+- list wallet balances
+- list active trades
+- select an asset to auto trade
 - start auto trading asset
 - stop auto trading asset
-

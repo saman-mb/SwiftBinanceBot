@@ -10,5 +10,85 @@ import Foundation
 
 class ConsoleIO
 {
+    enum Command: String
+    {
+        case keys   // adding and removing API keys
+        case wallet // lists wallet balances
+        case trades // lists current trades
+        case start  // start trading bot
+        case stop   // stop trading bot
+        case select // select a crypto asset to trade
+        
+        enum Keys: String
+        {
+            case list
+            case purge
+        }
+    }
     
+    static func parseArgs()
+    {
+        var args = CommandLine.arguments
+        args.remove(at: 0)
+        
+        guard args.count >= 1 else {
+            print("Type a supported command")
+            return
+        }
+        let arg = args[0]
+        guard let command = Command(rawValue: arg) else {
+            print("Invalid command!")
+            return
+        }
+        print("Command detected: \(command.rawValue)")
+        switch command
+        {
+        case .keys:
+            break
+        case .wallet:
+            break
+        case .trades:
+            break
+        case .start:
+            break
+        case .stop:
+            break
+        case .select:
+            break
+        }
+    }
+    
+    static func listWallet()
+    {
+        // http account api call
+        // print response
+    }
+    
+    static func listTrades()
+    {
+        // http trades api call
+        // print response
+    }
+    
+    static func startBot()
+    {
+        // starts the bot if an asset has been selected
+    }
+    
+    static func stopBot()
+    {
+        // stops the bot
+    }
+    
+    static func select(asset: String)
+    {
+        // validae asset by checking it exists on binance
+        // select it and print status or print error
+    }
+    
+    static func saveKeys(secret: String, public: String)
+    {
+        // store in keychain
+        // print status
+    }
 }
