@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ConsoleIO
+class ConsoleFacade
 {
     enum Command: String
     {

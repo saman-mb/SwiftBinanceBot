@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  SocketFacade.swift
 //  BinanceBot
 //
 //  Created by Saman Badakhshan on 22/12/2019.
@@ -8,4 +8,3 @@
 
 import Foundation
 
-ConsoleFacade.parseArgs()

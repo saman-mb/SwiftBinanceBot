@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FAF415B23B027E9009E0C67 /* SocketFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF415A23B027E9009E0C67 /* SocketFacade.swift */; };
 		8FD5248A23B00EA60007EB36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5248923B00EA60007EB36 /* main.swift */; };
-		8FD5250223B016690007EB36 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5250123B016690007EB36 /* ConsoleIO.swift */; };
+		8FD5250223B016690007EB36 /* ConsoleFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5250123B016690007EB36 /* ConsoleFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8FAF415A23B027E9009E0C67 /* SocketFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketFacade.swift; sourceTree = "<group>"; };
 		8FD5248623B00EA60007EB36 /* BinanceBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinanceBot; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD5248923B00EA60007EB36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		8FD5250123B016690007EB36 /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		8FD5250123B016690007EB36 /* ConsoleFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,11 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FAF415C23B02842009E0C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FD5247D23B00EA60007EB36 = {
 			isa = PBXGroup;
 			children = (
 				8FD5248823B00EA60007EB36 /* BinanceBot */,
 				8FD5248723B00EA60007EB36 /* Products */,
+				8FAF415C23B02842009E0C67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				8FD5248923B00EA60007EB36 /* main.swift */,
-				8FD5250123B016690007EB36 /* ConsoleIO.swift */,
+				8FD5250123B016690007EB36 /* ConsoleFacade.swift */,
+				8FAF415A23B027E9009E0C67 /* SocketFacade.swift */,
 			);
 			path = BinanceBot;
 			sourceTree = "<group>";
@@ -122,8 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD5250223B016690007EB36 /* ConsoleIO.swift in Sources */,
+				8FD5250223B016690007EB36 /* ConsoleFacade.swift in Sources */,
 				8FD5248A23B00EA60007EB36 /* main.swift in Sources */,
+				8FAF415B23B027E9009E0C67 /* SocketFacade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +262,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JN3KGSH4SJ;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -260,6 +273,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JN3KGSH4SJ;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
