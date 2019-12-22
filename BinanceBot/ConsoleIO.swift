@@ -21,6 +21,7 @@ class ConsoleIO
         
         enum Keys: String
         {
+            case set
             case list
             case purge
         }
@@ -35,7 +36,7 @@ class ConsoleIO
             print("Type a supported command")
             return
         }
-        let arg = args[0]
+        let arg = args.remove(at: 0)
         guard let command = Command(rawValue: arg) else {
             print("Invalid command!")
             return
@@ -44,7 +45,7 @@ class ConsoleIO
         switch command
         {
         case .keys:
-            break
+            handleKeys(args: args)
         case .wallet:
             break
         case .trades:
@@ -86,9 +87,22 @@ class ConsoleIO
         // select it and print status or print error
     }
     
-    static func saveKeys(secret: String, public: String)
+    static func handleKeys(args: [String])
     {
-        // store in keychain
-        // print status
+        guard args.count >= 1, let command = Command.Keys(rawValue: args[0]) else {
+            print("Please provide a valid keys sub command")
+            return
+        }
+        print("Keys command detected: \(command.rawValue)")
+        switch command
+        {
+        case .set:
+            break
+        case .list:
+            break
+        case .purge:
+            break
+        }
+
     }
 }
