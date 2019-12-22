@@ -1,0 +1,3 @@
+[submodule "SwiftWebSocket"]
+	path = submodules/SwiftWebSocket
+	url = git@github.com:tidwall/SwiftWebSocket.git
