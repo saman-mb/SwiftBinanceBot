@@ -37,12 +37,7 @@ class ConsoleClient
         self.socketClient = socketClient
     }
     
-    func test()
-    {
-        requestClient.ping()
-        requestClient.time()
-    }
-    
+    //MARK: - Command Line Input Processing
     func processInput()
     {
         var args = CommandLine.arguments
@@ -75,6 +70,14 @@ class ConsoleClient
         case .test:
             test()
         }
+    }
+    
+    
+    //MARK: - Command Handlers
+    func test()
+    {
+        requestClient.ping()
+        requestClient.time()
     }
     
     func listWallet()
