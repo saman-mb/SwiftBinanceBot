@@ -11,7 +11,11 @@
 		8F78355C23B0B86C00892012 /* BinanceRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F78355B23B0B86C00892012 /* BinanceRequestClient.swift */; };
 		8F7835B123B0BB4900892012 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7835A223B0BB3200892012 /* Alamofire.framework */; };
 		8FA4009E23B0BD4B00B245A1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA4009123B0BBE400B245A1 /* PromiseKit.framework */; };
+		8FA4013123B0D7C600B245A1 /* BinanceSocketClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4013023B0D7C600B245A1 /* BinanceSocketClientTests.swift */; };
 		8FAF415B23B027E9009E0C67 /* BinanceSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF415A23B027E9009E0C67 /* BinanceSocketClient.swift */; };
+		8FCDB2DE23B0DAFD00A7B2B5 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F78353A23B0B61F00892012 /* Starscream.framework */; };
+		8FCDB2DF23B0DB0000A7B2B5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7835A223B0BB3200892012 /* Alamofire.framework */; };
+		8FCDB2E023B0DB0400A7B2B5 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA4009123B0BBE400B245A1 /* PromiseKit.framework */; };
 		8FD5248A23B00EA60007EB36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5248923B00EA60007EB36 /* main.swift */; };
 		8FD5250223B016690007EB36 /* ConsoleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5250123B016690007EB36 /* ConsoleClient.swift */; };
 /* End PBXBuildFile section */
@@ -143,6 +147,13 @@
 			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
 			remoteInfo = PromiseKit;
 		};
+		8FCDB2DB23B0D91C00A7B2B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD5247E23B00EA60007EB36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD5248523B00EA60007EB36;
+			remoteInfo = BinanceBot;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,6 +173,9 @@
 		8F78355B23B0B86C00892012 /* BinanceRequestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceRequestClient.swift; sourceTree = "<group>"; };
 		8F78359323B0BB3200892012 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = submodules/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		8FA4008723B0BBE400B245A1 /* PromiseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PromiseKit.xcodeproj; path = submodules/PromiseKit/PromiseKit.xcodeproj; sourceTree = "<group>"; };
+		8FA4012E23B0D7C600B245A1 /* BinanceBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinanceBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA4013023B0D7C600B245A1 /* BinanceSocketClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceSocketClientTests.swift; sourceTree = "<group>"; };
+		8FA4013223B0D7C600B245A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FAF415A23B027E9009E0C67 /* BinanceSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceSocketClient.swift; sourceTree = "<group>"; };
 		8FD5248623B00EA60007EB36 /* BinanceBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinanceBot; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD5248923B00EA60007EB36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -169,6 +183,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8FA4012B23B0D7C600B245A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCDB2E023B0DB0400A7B2B5 /* PromiseKit.framework in Frameworks */,
+				8FCDB2DF23B0DB0000A7B2B5 /* Alamofire.framework in Frameworks */,
+				8FCDB2DE23B0DAFD00A7B2B5 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FD5248323B00EA60007EB36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +242,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8FA4012F23B0D7C600B245A1 /* BinanceBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA4013023B0D7C600B245A1 /* BinanceSocketClientTests.swift */,
+				8FA4013223B0D7C600B245A1 /* Info.plist */,
+			);
+			path = BinanceBotTests;
+			sourceTree = "<group>";
+		};
 		8FAF415C23B02842009E0C67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				8FD5248823B00EA60007EB36 /* BinanceBot */,
+				8FA4012F23B0D7C600B245A1 /* BinanceBotTests */,
 				8FD5248723B00EA60007EB36 /* Products */,
 				8FAF415C23B02842009E0C67 /* Frameworks */,
 			);
@@ -241,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				8FD5248623B00EA60007EB36 /* BinanceBot */,
+				8FA4012E23B0D7C600B245A1 /* BinanceBotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +294,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8FA4012D23B0D7C600B245A1 /* BinanceBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA4014123B0D7C600B245A1 /* Build configuration list for PBXNativeTarget "BinanceBotTests" */;
+			buildPhases = (
+				8FA4012A23B0D7C600B245A1 /* Sources */,
+				8FA4012B23B0D7C600B245A1 /* Frameworks */,
+				8FA4012C23B0D7C600B245A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FCDB2DC23B0D91C00A7B2B5 /* PBXTargetDependency */,
+			);
+			name = BinanceBotTests;
+			productName = BinanceBotTests;
+			productReference = 8FA4012E23B0D7C600B245A1 /* BinanceBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8FD5248523B00EA60007EB36 /* BinanceBot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FD5248D23B00EA60007EB36 /* Build configuration list for PBXNativeTarget "BinanceBot" */;
@@ -289,6 +342,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Saman Badakhshan";
 				TargetAttributes = {
+					8FA4012D23B0D7C600B245A1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					8FD5248523B00EA60007EB36 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -321,6 +377,7 @@
 			projectRoot = "";
 			targets = (
 				8FD5248523B00EA60007EB36 /* BinanceBot */,
+				8FA4012D23B0D7C600B245A1 /* BinanceBotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -433,7 +490,25 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8FA4012C23B0D7C600B245A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8FA4012A23B0D7C600B245A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA4013123B0D7C600B245A1 /* BinanceSocketClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FD5248223B00EA60007EB36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,9 +538,50 @@
 			name = PromiseKit;
 			targetProxy = 8FA4009C23B0BD4600B245A1 /* PBXContainerItemProxy */;
 		};
+		8FCDB2DC23B0D91C00A7B2B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD5248523B00EA60007EB36 /* BinanceBot */;
+			targetProxy = 8FCDB2DB23B0D91C00A7B2B5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8FA4013323B0D7C600B245A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JN3KGSH4SJ;
+				INFOPLIST_FILE = BinanceBotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saman.binancebot.BinanceBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8FA4013423B0D7C600B245A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JN3KGSH4SJ;
+				INFOPLIST_FILE = BinanceBotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saman.binancebot.BinanceBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		8FD5248B23B00EA60007EB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -606,6 +722,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8FA4014123B0D7C600B245A1 /* Build configuration list for PBXNativeTarget "BinanceBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA4013323B0D7C600B245A1 /* Debug */,
+				8FA4013423B0D7C600B245A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FD5248123B00EA60007EB36 /* Build configuration list for PBXProject "BinanceBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
