@@ -1,3 +1,6 @@
 [submodule "SwiftWebSocket"]
 	path = submodules/SwiftWebSocket
 	url = git@github.com:tidwall/SwiftWebSocket.git
+[submodule "submodules/Starscream"]
+	path = submodules/Starscream
+	url = git@github.com:daltoniam/Starscream.git
