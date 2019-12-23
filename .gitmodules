@@ -4,3 +4,6 @@
 [submodule "submodules/Starscream"]
 	path = submodules/Starscream
 	url = git@github.com:daltoniam/Starscream.git
+[submodule "submodules/Alamofire"]
+	path = submodules/Alamofire
+	url = git@github.com:Alamofire/Alamofire.git
