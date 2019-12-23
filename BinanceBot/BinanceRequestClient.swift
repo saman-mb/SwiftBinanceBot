@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import PromiseKit
 
 struct BinanceRequestClientConfiguration
 {

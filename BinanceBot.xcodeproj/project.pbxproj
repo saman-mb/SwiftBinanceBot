@@ -10,6 +10,7 @@
 		8F78353F23B0B63000892012 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F78353A23B0B61F00892012 /* Starscream.framework */; };
 		8F78355C23B0B86C00892012 /* BinanceRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F78355B23B0B86C00892012 /* BinanceRequestClient.swift */; };
 		8F7835B123B0BB4900892012 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7835A223B0BB3200892012 /* Alamofire.framework */; };
+		8FA4009E23B0BD4B00B245A1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA4009123B0BBE400B245A1 /* PromiseKit.framework */; };
 		8FAF415B23B027E9009E0C67 /* BinanceSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF415A23B027E9009E0C67 /* BinanceSocketClient.swift */; };
 		8FD5248A23B00EA60007EB36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5248923B00EA60007EB36 /* main.swift */; };
 		8FD5250223B016690007EB36 /* ConsoleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5250123B016690007EB36 /* ConsoleClient.swift */; };
@@ -135,6 +136,13 @@
 			remoteGlobalIDString = C0244E622047A6CB00ACB4AC;
 			remoteInfo = "PMKJSA+Tests";
 		};
+		8FA4009C23B0BD4600B245A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA4008723B0BBE400B245A1 /* PromiseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -165,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA4009E23B0BD4B00B245A1 /* PromiseKit.framework in Frameworks */,
 				8F7835B123B0BB4900892012 /* Alamofire.framework in Frameworks */,
 				8F78353F23B0B63000892012 /* Starscream.framework in Frameworks */,
 			);
@@ -261,6 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8FA4009D23B0BD4600B245A1 /* PBXTargetDependency */,
 				8F7835AC23B0BB3A00892012 /* PBXTargetDependency */,
 				8F78353E23B0B62C00892012 /* PBXTargetDependency */,
 			);
@@ -447,6 +457,11 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire macOS";
 			targetProxy = 8F7835AB23B0BB3A00892012 /* PBXContainerItemProxy */;
+		};
+		8FA4009D23B0BD4600B245A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			targetProxy = 8FA4009C23B0BD4600B245A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
