@@ -9,7 +9,12 @@
 import Foundation
 import Starscream
 
-class BinanceSocketClient
+protocol BinanceSocketInterface
+{
+    
+}
+
+class BinanceSocketClient: BinanceSocketInterface
 {
     
 }

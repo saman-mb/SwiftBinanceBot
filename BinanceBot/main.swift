@@ -8,5 +8,9 @@
 
 import Foundation
 
-let console = ConsoleClient()
-console.process()
+let requestCient = BinanceRequestClient(config: BinanceRequestClientConfiguration())
+let socketClient = BinanceSocketClient()
+let console = ConsoleClient(requestClient: requestCient, socketClient: socketClient)
+console.processInput()
+
+RunLoop.current.run(until: Date(timeIntervalSinceNow: 10000000))

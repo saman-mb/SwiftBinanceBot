@@ -12,6 +12,7 @@ class ConsoleClient
 {
     enum Command: String
     {
+        case test   // testig API calls
         case keys   // adding and removing API keys
         case wallet // lists wallet balances
         case trades // lists current trades
@@ -27,7 +28,22 @@ class ConsoleClient
         }
     }
     
-    func process()
+    let requestClient: BinanceRequestInterface
+    let socketClient: BinanceSocketInterface
+    
+    init(requestClient: BinanceRequestInterface, socketClient: BinanceSocketInterface)
+    {
+        self.requestClient = requestClient
+        self.socketClient = socketClient
+    }
+    
+    func test()
+    {
+        requestClient.ping()
+        requestClient.time()
+    }
+    
+    func processInput()
     {
         var args = CommandLine.arguments
         args.remove(at: 0)
@@ -56,6 +72,8 @@ class ConsoleClient
             break
         case .select:
             break
+        case .test:
+            test()
         }
     }
     
