@@ -7,4 +7,9 @@
 //
 
 import Foundation
+import Starscream
 
+class BinanceSocketClient
+{
+    
+}

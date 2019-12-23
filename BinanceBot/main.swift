@@ -8,4 +8,5 @@
 
 import Foundation
 
-ConsoleFacade.parseArgs()
+let console = ConsoleClient()
+console.process()

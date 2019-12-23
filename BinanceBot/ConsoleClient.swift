@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ConsoleFacade
+class ConsoleClient
 {
     enum Command: String
     {
@@ -27,7 +27,7 @@ class ConsoleFacade
         }
     }
     
-    static func parseArgs()
+    func process()
     {
         var args = CommandLine.arguments
         args.remove(at: 0)
@@ -59,35 +59,35 @@ class ConsoleFacade
         }
     }
     
-    static func listWallet()
+    func listWallet()
     {
         // http account api call
         // print response
     }
     
-    static func listTrades()
+    func listTrades()
     {
         // http trades api call
         // print response
     }
     
-    static func startBot()
+    func startBot()
     {
         // starts the bot if an asset has been selected
     }
     
-    static func stopBot()
+    func stopBot()
     {
         // stops the bot
     }
     
-    static func select(asset: String)
+    func select(asset: String)
     {
         // validae asset by checking it exists on binance
         // select it and print status or print error
     }
     
-    static func handleKeys(args: [String])
+    func handleKeys(args: [String])
     {
         guard args.count >= 1, let command = Command.Keys(rawValue: args[0]) else {
             print("Please provide a valid keys sub command")
